@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 20px;
+  background-color: white; 
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.name {
+    color: goldenrod;
+    font-size: 40%;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 75%;
+  
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: black;
+  padding: 20px;
+  margin-top: 20px;
+  color: goldenrod;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  margin-top: 6px;
+  color: black;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn, .header, .topnav {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .img {
+      background-color: black;
+      height: 140px;
+  }
+</style>
+
+
+<body>
+    <div class="header">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="card">    <h1>Muhammad Anas Ansari</h1> 
+    
+     House#466, Street 17, Sector 11 1/2, Rehmat chowk, Orangi Town, Karachi <br>
+       ansari.anasai024@gmail.com <br>
+        Contact me# 0349-3375081
+        </div>
+      
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h1>I am a Web developer</h1>
+            
+            
+            <h2>Front End developer</h2>
+            <p>Prioritizing user experience. Bringing a concept to life with HTML, CSS, and JavaScript. Production and maintenance of websites and web application user interfaces.
+                </p>
+          </div>
+          <div class="card">
+            <h2>Qualification</h2>
+            <ul> <li> Matriculation from Rose House Grammar School</li>
+            <li> Intermediate (pre-Engineering) from Dehli Govt. College</li>
+            <li> Software Engineering from University of Karachi</li>
+            
+                </ul>
+    
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>Experienced</h2>
+            <ul>
+                <li>Former Maths and Physics Teacher at Shaheen Public Sec. School</li>
+                <li>Maths Teacher at Metropolis Education System </li>
+                <li>IT teacher at Azeem's Colligiate</li>
+                </ul>
+            
+            
+            
+           
+          </div>
+          <div class="card">
+            <h2>Skills</h2>
+            <ul> <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React JS</li>
+                </ul>
+            </div>
+          <div class="card">
+            <h3>Extra Skills</h3>
+            <ul><li>CIT</li>
+            <li>Python</li>
+            <li>SQL server</li>
+            
+                </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h2>Contact Me</h2>
+        <div class="img"> <img src="data:image/png;base64,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" alt="">
+      </div>
+        </div>
+</body>
+</html>
